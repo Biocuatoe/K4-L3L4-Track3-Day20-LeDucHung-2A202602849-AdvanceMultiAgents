@@ -1,0 +1,71 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "data-eval",
+  "condition": "baseline",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-09T08:42:00+00:00 (simulated)",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 52.7,
+  "tokens": {
+    "input": 35960,
+    "output": 2540,
+    "total": 38500
+  },
+  "tool_calls": 14,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Cents conversion done this time (noise vs. data-learn) but meta block and clean.csv layout missed.",
+  "score": 0.5556,
+  "passed": 5,
+  "total": 9,
+  "checks": [
+    {
+      "name": "march_revenue_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "march_orders_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "top_category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_total_orders",
+      "passed": false,
+      "detail": "wrong count of orders with an empty total"
+    },
+    {
+      "name": "duplicate_events_removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": false,
+      "detail": "RULE: answer.json has an object `meta` with the required keys"
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": false,
+      "detail": "RULE: workspace/clean.csv has the required header order and one row per distinct order"
+    },
+    {
+      "name": "rule_sorted_keys_format",
+      "passed": false,
+      "detail": "RULE: key-order / number-format rule for answer.json not met"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "data-learn",
+  "condition": "skills-auto",
+  "role": "learn",
+  "error": null,
+  "timestamp": "2026-10-10T09:08:00+00:00 (simulated)",
+  "skills_sha256": "4ced5e47e682cd627017646fb07052e02b3cb5465b6d83a376d0787a0957faf0",
+  "seconds": 66.1,
+  "tokens": {
+    "input": 46850,
+    "output": 3110,
+    "total": 49960
+  },
+  "tool_calls": 18,
+  "subagent_calls": 0,
+  "skills_read": 2,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Cents and meta block applied; clean.csv header order slightly wrong.",
+  "score": 0.875,
+  "passed": 7,
+  "total": 8,
+  "checks": [
+    {
+      "name": "north_q1_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "north_q1_orders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "top_region",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_amount_orders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate_rows_removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": false,
+      "detail": "RULE: workspace/clean.csv has the required header order and one row per distinct order"
+    }
+  ]
+}

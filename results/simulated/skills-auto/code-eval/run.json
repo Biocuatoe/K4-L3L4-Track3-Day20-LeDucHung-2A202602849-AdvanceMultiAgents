@@ -1,0 +1,81 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "code-eval",
+  "condition": "skills-auto",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-10T09:51:00+00:00 (simulated)",
+  "skills_sha256": "4ced5e47e682cd627017646fb07052e02b3cb5465b6d83a376d0787a0957faf0",
+  "seconds": 97.3,
+  "tokens": {
+    "input": 71460,
+    "output": 4530,
+    "total": 75990
+  },
+  "tool_calls": 28,
+  "subagent_calls": 0,
+  "skills_read": 2,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] PARTIAL FOLLOW: read the conventions skill, added type hints and a changelog, but wrote only 2 regression tests (skill says one per bug, at least 3). New version-bump convention is not in any skill.",
+  "score": 0.7273,
+  "passed": 8,
+  "total": 11,
+  "checks": [
+    {
+      "name": "visible_suite_passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tests_not_modified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "parse_duration_all_formats",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "other_caller_fixed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "billable_blocks_round_up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "add_slot_no_shared_state",
+      "passed": false,
+      "detail": "two Schedule objects share one slot list (mutable default argument still present)"
+    },
+    {
+      "name": "negative_minutes_rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_type_hints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_regression_tests",
+      "passed": false,
+      "detail": "RULE: add tests/test_regressions.py with one test function per bug fixed (at least 3); the file must pass."
+    },
+    {
+      "name": "rule_changelog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_version_bump",
+      "passed": false,
+      "detail": "RULE: increment the patch number of __version__ once per fix session."
+    }
+  ]
+}

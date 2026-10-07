@@ -1,0 +1,66 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "data-learn",
+  "condition": "subagents",
+  "role": "learn",
+  "error": null,
+  "timestamp": "2026-10-09T10:52:00+00:00 (simulated)",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 121.7,
+  "tokens": {
+    "input": 79320,
+    "output": 5830,
+    "total": 85150
+  },
+  "tool_calls": 26,
+  "subagent_calls": 3,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Explorer's checklist fixed the empty-amount count; house rules still absent.",
+  "score": 0.625,
+  "passed": 5,
+  "total": 8,
+  "checks": [
+    {
+      "name": "north_q1_revenue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "north_q1_orders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "top_region",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_amount_orders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate_rows_removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": false,
+      "detail": "RULE: money values in answer.json are integer cents"
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": false,
+      "detail": "RULE: answer.json has an object `meta` with the required keys"
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": false,
+      "detail": "RULE: workspace/clean.csv has the required header order and one row per distinct order"
+    }
+  ]
+}

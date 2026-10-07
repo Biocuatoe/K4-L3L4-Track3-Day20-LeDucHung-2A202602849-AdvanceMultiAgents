@@ -1,0 +1,76 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "logs-eval",
+  "condition": "baseline",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-09T08:42:00+00:00 (simulated)",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 66.8,
+  "tokens": {
+    "input": 49730,
+    "output": 3390,
+    "total": 53120
+  },
+  "tool_calls": 18,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Correct counts and UTC timestamps; mixed-case levels left as-is; no house rules applied.",
+  "score": 0.6,
+  "passed": 6,
+  "total": 10,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "entry_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "levels_uppercase",
+      "passed": false,
+      "detail": "level values not normalised to upper-case in all entries"
+    },
+    {
+      "name": "repeat_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "counts_by_service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_service_names",
+      "passed": false,
+      "detail": "RULE: service names must be lower-case with '-' replaced by '_'"
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": "RULE: top-level object must carry the required schema header fields"
+    },
+    {
+      "name": "rule_source_line",
+      "passed": false,
+      "detail": "RULE: every entry must carry the required source_line field"
+    }
+  ]
+}

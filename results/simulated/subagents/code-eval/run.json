@@ -1,0 +1,81 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "code-eval",
+  "condition": "subagents",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-09T10:45:00+00:00 (simulated)",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 171.5,
+  "tokens": {
+    "input": 118250,
+    "output": 8040,
+    "total": 126290
+  },
+  "tool_calls": 36,
+  "subagent_calls": 5,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Reviewer subagent caught a negative-minutes edge case; the shared-state bug and the conventions were missed. Version bump was done incidentally.",
+  "score": 0.7273,
+  "passed": 8,
+  "total": 11,
+  "checks": [
+    {
+      "name": "visible_suite_passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tests_not_modified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "parse_duration_all_formats",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "other_caller_fixed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "billable_blocks_round_up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "add_slot_no_shared_state",
+      "passed": false,
+      "detail": "two Schedule objects share one slot list (mutable default argument still present)"
+    },
+    {
+      "name": "negative_minutes_rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_type_hints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_regression_tests",
+      "passed": false,
+      "detail": "RULE: add tests/test_regressions.py with one test function per bug fixed (at least 3); the file must pass."
+    },
+    {
+      "name": "rule_changelog",
+      "passed": false,
+      "detail": "RULE: record each fix in CHANGELOG.md under '## Unreleased' as bullets"
+    },
+    {
+      "name": "rule_version_bump",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

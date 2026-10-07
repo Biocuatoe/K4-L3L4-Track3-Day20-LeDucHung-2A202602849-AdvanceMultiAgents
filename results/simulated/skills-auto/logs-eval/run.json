@@ -1,0 +1,76 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "logs-eval",
+  "condition": "skills-auto",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-10T09:51:00+00:00 (simulated)",
+  "skills_sha256": "4ced5e47e682cd627017646fb07052e02b3cb5465b6d83a376d0787a0957faf0",
+  "seconds": 72.5,
+  "tokens": {
+    "input": 54070,
+    "output": 3470,
+    "total": 57540
+  },
+  "tool_calls": 20,
+  "subagent_calls": 0,
+  "skills_read": 1,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Read only the log-output skill (skipped the general one); the three learned rules applied; new source_line rule not covered.",
+  "score": 0.8,
+  "passed": 8,
+  "total": 10,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "entry_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "levels_uppercase",
+      "passed": false,
+      "detail": "level values not normalised to upper-case in all entries"
+    },
+    {
+      "name": "repeat_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "counts_by_service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_service_names",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_source_line",
+      "passed": false,
+      "detail": "RULE: every entry must carry the required source_line field"
+    }
+  ]
+}

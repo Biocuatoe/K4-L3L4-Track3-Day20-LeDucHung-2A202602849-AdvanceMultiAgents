@@ -1,0 +1,71 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "data-eval",
+  "condition": "skills-auto",
+  "role": "eval",
+  "error": null,
+  "timestamp": "2026-10-10T09:51:00+00:00 (simulated)",
+  "skills_sha256": "4ced5e47e682cd627017646fb07052e02b3cb5465b6d83a376d0787a0957faf0",
+  "seconds": 59.4,
+  "tokens": {
+    "input": 44190,
+    "output": 3020,
+    "total": 47210
+  },
+  "tool_calls": 17,
+  "subagent_calls": 0,
+  "skills_read": 2,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Cents, meta and clean.csv layout from the skill; the new eval-only formatting rule was not covered.",
+  "score": 0.7778,
+  "passed": 7,
+  "total": 9,
+  "checks": [
+    {
+      "name": "march_revenue_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "march_orders_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "top_category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing_total_orders",
+      "passed": false,
+      "detail": "wrong count of orders with an empty total"
+    },
+    {
+      "name": "duplicate_events_removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_money_in_cents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_meta_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_clean_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_sorted_keys_format",
+      "passed": false,
+      "detail": "RULE: key-order / number-format rule for answer.json not met"
+    }
+  ]
+}

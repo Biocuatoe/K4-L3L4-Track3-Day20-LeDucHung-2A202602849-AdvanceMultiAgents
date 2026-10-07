@@ -1,0 +1,71 @@
+{
+  "SIMULATED": true,
+  "data_label": "SIMULATED / DEMONSTRATION DATA - not produced by a real API run (Groq free-tier quota prevented the real experiment).",
+  "task": "logs-learn",
+  "condition": "baseline",
+  "role": "learn",
+  "error": null,
+  "timestamp": "2026-10-09T08:49:00+00:00 (simulated)",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 64.2,
+  "tokens": {
+    "input": 47110,
+    "output": 3560,
+    "total": 50670
+  },
+  "tool_calls": 17,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "[SIMULATED] Parsed multi-line stack traces and timestamps correctly; kept original service names, no schema header, entries in file order.",
+  "score": 0.5556,
+  "passed": 5,
+  "total": 9,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "entry_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exception_fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "repeat_counts",
+      "passed": false,
+      "detail": "repeat_count wrong for collapsed repeated lines"
+    },
+    {
+      "name": "counts_by_service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_service_names",
+      "passed": false,
+      "detail": "RULE: service names must be lower-case with '-' replaced by '_'"
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": false,
+      "detail": "RULE: `errors` must be sorted by service, then by timestamp_utc"
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": "RULE: top-level object must carry the required schema header fields"
+    }
+  ]
+}
